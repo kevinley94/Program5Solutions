@@ -1,0 +1,6 @@
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\loopingOverLists\loopingOverLists\bin\Debug\loopingOverLists.exe.config
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\loopingOverLists\loopingOverLists\bin\Debug\loopingOverLists.exe
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\loopingOverLists\loopingOverLists\bin\Debug\loopingOverLists.pdb
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\loopingOverLists\loopingOverLists\obj\Debug\loopingOverLists.csprojResolveAssemblyReference.cache
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\loopingOverLists\loopingOverLists\obj\Debug\loopingOverLists.exe
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\loopingOverLists\loopingOverLists\obj\Debug\loopingOverLists.pdb
