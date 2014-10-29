@@ -194,9 +194,10 @@ namespace Week1Practice
             Console.WriteLine("I'm looping from " + startNum + " to " + endNum + ", incrementing " + increment + " each time");
                 for ( int n= startNum; n <= endNum ; n= n + increment){ 
                     loopCount= loopCount +1;
-                    Console.WriteLine("That loopCount was craaaaaaazy, we looped " + loopCount + " times!");
-                    Console.ReadKey();
+                    
                 }
+            Console.WriteLine("That loopCount was craaaaaaazy, we looped " + loopCount + " times!");
+                    Console.ReadKey();
 
         }
         /// <summary>
