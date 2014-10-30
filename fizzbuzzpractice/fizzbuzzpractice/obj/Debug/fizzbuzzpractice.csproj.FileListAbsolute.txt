@@ -1,0 +1,6 @@
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\fizzbuzzpractice\fizzbuzzpractice\bin\Debug\fizzbuzzpractice.exe.config
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\fizzbuzzpractice\fizzbuzzpractice\bin\Debug\fizzbuzzpractice.exe
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\fizzbuzzpractice\fizzbuzzpractice\bin\Debug\fizzbuzzpractice.pdb
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\fizzbuzzpractice\fizzbuzzpractice\obj\Debug\fizzbuzzpractice.csprojResolveAssemblyReference.cache
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\fizzbuzzpractice\fizzbuzzpractice\obj\Debug\fizzbuzzpractice.exe
+C:\Users\Technologist\Documents\GitHub\Program5Solutions\fizzbuzzpractice\fizzbuzzpractice\obj\Debug\fizzbuzzpractice.pdb
