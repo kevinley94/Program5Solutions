@@ -10,6 +10,7 @@ namespace Week1CodeChallenge
     {
         static void Main(string[] args)
         {
+           
             for (int j= 1; j <= 10; j = j + 1) 
             {
                 IsPrime(j);
@@ -25,7 +26,7 @@ namespace Week1CodeChallenge
             }
             Yodaizer("I like code");
             TextStats("Here we go. Hope this works. Fingers crossed.");
-            
+            DashInsert(1835709);
                 Console.ReadKey();
         }
         static void FizzBuzz(int number)
@@ -114,23 +115,39 @@ namespace Week1CodeChallenge
                 Console.WriteLine(number + " is prime");
             else
                 //if it finds any more than ..or less than.. 2, it isn't a prime number
-                Console.WriteLine(number + " is not prime");
+                Console.WriteLine(number);
              
        
         }
         //under development
         static void DashInsert(int number)
         {
-            for (int i = 0; i <= number.ToString().Length; i++)
+            string numString = number.ToString();
+            for (int i = 0; i < numString.Length - 1; i++)
+               
             {
-                int oddNumber = 3;
+                
+                if (numString[i] % 2 != 0)
+                {Console.Write(numString[i]);
 
-            }
+
+                    if (numString[i + 1] % 2 != 0)
+                    {
+                        Console.Write('-');
+
+                    }
+                    
+                   
+                } else { Console.Write(numString[i]); }
+
+            } 
+                }
+            } 
+
+
+           
+
         }
 
-    }
+  
    
-    }
-
-    
-
