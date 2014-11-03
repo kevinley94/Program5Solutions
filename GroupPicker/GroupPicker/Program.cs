@@ -10,31 +10,35 @@ namespace GroupPicker
     {
         static void Main(string[] args)
         {
+            PickGroups(2, 20);
         }
 
         static void PickGroups(int groupSize, int classSize)
         {
             Random rng = new Random();
-            List<int> classList = new List<int>(classSize);
+            List<int> classList = new List<int>{classSize};
             List<int> groupList = new List<int>(groupSize);
+
+            
    
-           if (classList.Count > 0)
+           while (classList.Count > 0)
             {
-                int aStudent =classList[ rng.Next(0, classSize+1)];
+                int i = rng.Next(0, classSize + 1);
+                int aStudent = classList[i];
                 
                     classList.Remove(aStudent);
-                    groupList.Add(aStudent);
+                   groupList.Add(aStudent);
                     if(groupList.Count == groupSize)
                     {
-                        Console.WriteLine(groupSize);
-                    }
+                       Console.WriteLine();
+                }
                     
             }
-
 
 
  
 
         }
+        
     }
 }
