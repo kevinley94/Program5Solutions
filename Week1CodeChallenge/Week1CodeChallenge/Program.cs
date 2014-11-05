@@ -25,6 +25,7 @@ namespace Week1CodeChallenge
                 FizzBuzz(i);
             }
             Yodaizer("I like code");
+            Yodaizer2("May the force be with you.");
             TextStats("Here we go. Hope this works. Fingers crossed.");
             DashInsert(1835709);
                 Console.ReadKey();
@@ -59,12 +60,27 @@ namespace Week1CodeChallenge
 
             
         }
+        //the way Dustin did it:
+        static void Yodaizer2(string text)
+        {
+            List<string> wordList = text.Split(' ').ToList();
+            for (int i = wordList.Count(); i >= 0; i = i - 1)
+                {
+                    //remove characters
+                    // .Replace(thing to be replaced, thing that replaces it
+                    //get the current word from the list
+                    string currentWord = wordList[i];
+                    Console.Write(currentWord + " ");
+                }
+                //add a blank line after the loop completes
+                Console.WriteLine();
+            }
         static void TextStats(string input)
         {
             string[] words = input.Split(' ');
             
             Console.WriteLine("Number of characters: " + input.Length);
-            Console.WriteLine("Number of words: " + words.Count());
+            Console.WriteLine("Number of words: " + words.Count());// use .length for arrays
             int numberOfVowels = 0;
             int numberOfConsonants = 0;
             int numberOfSpecial = 0;
@@ -119,7 +135,29 @@ namespace Week1CodeChallenge
              
        
         }
-        //under development
+        static void IsPrime2(int number)
+        {
+            bool itsAPrime = true;
+            for (int i = 2; i < number; i = i + 1)
+            {
+                if (number % i == 0)
+                {
+                    itsAPrime = false;
+                    //its not a prime number , no need to keep checking
+                    break;
+                }
+            }
+            //output
+            if (itsAPrime)
+            {
+                Console.WriteLine(number + " is a prime");
+            }
+            else
+            {
+                Console.WriteLine(number + " is not a prime");
+            }
+        }
+       
         static void DashInsert(int number)
         {
             string numString = number.ToString();
@@ -142,6 +180,32 @@ namespace Week1CodeChallenge
 
             } 
                 }
+        static void DashInsert2(int number)
+        {
+            //can't loop over each digit of a number
+            //so convert to a string
+            string numberString = number.ToString();
+            //declare a string to hold the output
+            //.empty lets you make a empty string
+            string outputString = string.Empty;
+            //loop over all digits except last one
+            for (int i = 0; i < numberString.Length - 1; i = i + 1)
+            {//int parse allows something to be used as an integer, but can not function
+                //on chars so must convert to string.
+                int currentDigit = int.Parse(numberString[i].ToString());
+                int nextDigit = int.Parse(numberString[i + 1].ToString());
+                if (currentDigit % 2 != 0 && nextDigit % 2 != 0)
+                {
+                    outputString = outputString += currentDigit + "-";
+                }
+                else
+                {
+                    outputString = currentDigit.ToString();
+                }
+                Console.WriteLine("Original: " + numberString);
+                Console.WriteLine("Finished: " + outputString);
+            }
+        }
             } 
 
 

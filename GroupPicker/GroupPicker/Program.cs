@@ -16,18 +16,22 @@ namespace GroupPicker
             List<int> groupList = new List<int>();
 
             
-   
+    // so long as there is a number in the classsList, the loop will keep going.
            while (classList.Count > 0)
             {
+               //pulls a random number from classList
                 int i = rng.Next(0, classList.Count);
+               //aStudent assigns that number an index for the list
                 int aStudent = classList[i];
-                
+                // remove the indexed student and add him to groupList
                    classList.Remove(aStudent);
                    groupList.Add(aStudent);
-
+               //once group list is four..
                     if(groupList.Count == 4)
                     {
+                        //it will print out the people in th group
                        Console.WriteLine("Group: \n {0} {1} {2} {3}" , groupList[0], groupList [1], groupList[2], groupList [3]);
+                        //this will clear it out so the loop can begin again with the people left
                        groupList.Clear();
                 }
                     
